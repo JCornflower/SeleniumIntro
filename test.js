@@ -20,7 +20,7 @@ driver.findElement(By.name('signin')).click();
 driver.wait(function() {
     // console.error('wait
    
-    return driver.findElements(By.name("content"));
+    return driver.elementLocated(By.css("class"));
 }, 10000).then(re => {
         console.log('test', Object.keys(re));
         // re.findElement(By.css('input')).sendKeys('ol2007july@gmail.com')
